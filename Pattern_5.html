@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2> traingle star</h2>
+    <script>
+        let n = 5;
+
+        for (i = 1; i <= n-1; i++) {
+            for (j = 1; j <= n; j++) {
+                if (i <= j) {
+
+                    document.write("&nbsp &nbsp ");
+                }
+            }
+
+            for (let k = 1; k <= n; k++) {
+                if (k <= i) {
+
+                    document.write("* &nbsp");
+                }
+
+            }
+
+
+            for (let k = 1; k <= n; k++) {
+                if (k <= i-1) {
+
+                    document.write("* &nbsp");
+                }
+
+            }
+            document.write("<br>");
+        }
+
+        for (i = 1; i <= n; i++) {
+            for (j = 1; j <= n; j++) {
+                if (j <= i) {
+
+                    document.write('&nbsp &nbsp ');
+                }
+            }
+
+            for (let k = 1; k <= n; k++) {
+                if (i <= k) {
+
+                    document.write("* &nbsp");
+                }
+
+            }
+
+
+            for (let k = 1; k <= n; k++) {
+                if (i <= k-1) {
+
+                    document.write("* &nbsp");
+                }
+
+            }
+            document.write("<br>");
+        }  
+    </script>
+</body>
+
+</html>
